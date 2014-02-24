@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "ep_user_pad_frontend",
+      "hooks": {
+        "expressCreateServer": "ep_user_pad_frontend/hooks.js:expressCreateServer",
+        "eejsBlock_styles" : "ep_user_pad_frontend/hooks",
+        "eejsBlock_indexWrapper" : "ep_user_pad_frontend/hooks"
+      },
+      "client_hooks" : {
+                "documentReady" : "ep_user_pad_frontend/static/js/client/user_pad_frontend.js:documentReady"
+      }
+    }
+  ]
+}
